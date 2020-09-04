@@ -53,5 +53,11 @@ const jokes = [
         answer: "Paramore",
         approved: true,
         mainTheme: "bandas"
+    },
+    {
+        joke: "Eu estava numa ilha mas queria ir para a outra. Assim eu fiz.",
+        answer: "Isso não foi um trocadilho, foi uma Troca D'Ilha",
+        approved: true,
+        mainTheme: "ilha"
     }
 ]
