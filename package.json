@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "npx nodemon ./src/app.js --exec babel-node --config-file ./.babelrc",
     "release": "npm run clean && npm run build && npm start",
-    "deploy": "npm run clean && npm run build && gcloud app deploy",
     "clean": "rm -rf dist && mkdir dist",
     "build": "npm run clean && babel src -s -D -d dist --config-file ./.babelrc --ignore node_modules",
     "start": "node dist/app.js"

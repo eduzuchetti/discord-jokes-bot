@@ -7,7 +7,7 @@ export default {
 
             GoodMorningModel.findOne().skip(random).then(result => {
                 console.log('Mensagem de bom dia encontrada:', result.toString())
-                
+
                 msg.channel.send(result.message)
             }).catch(err => {
                 console.error(err)
@@ -20,8 +20,8 @@ export default {
             console.err('Precisa passar uma mensagem para criar o novo Bom Dia.')
             return
         }
-        
-        GoodMorningModel.create({message: message}).then(data => {
+
+        GoodMorningModel.insertMany(message).then(data => {
             console.log('Mensagem de bom dia criada:', data)
         }).catch(err => {
             console.error('Falha ao criar mensagem de bom dia:', err)
